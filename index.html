@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherubtse Media Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <img src="logo.jpg" alt="Media logo" class="logo">
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <link >
+                <a href="executives.html">Executives</a>
+                <a href="WorksPage.html">Works</a>
+                <a href="#Membership">Membership</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="slideshow-container">
+        <img src="homepage1.jpeg" alt="Image 1" class="active">
+        <img src="homepage2.jpg" alt="Image 2">
+        <img src="homepage3.jpg" alt="Image 3">
+        <img src="homepage4.jpg" alt="Image 4">
+        <img src="homepage5.jpg" alt="Image 5">
+    </div>
+
+    <main>
+        <section id="home">
+            <h1>WELCOME TO SHERUBTSE MEDIA SOCIETY</h1>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>www.sherubtsemediasociety.com</p>
+            </div>
+            <div class="footer-right">
+                <p>Contact us at: <a href="mailto:sherubtsemediasociety@gmail.com">sherubtsemediasociety@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Slideshow -->
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slideshow-container img');
+        
+        function showSlides() {
+            // Hide all slides
+            slides.forEach((slide) => {
+                slide.style.display = 'none';
+            });
+            
+            // Increment slide index
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            
+            // Show the current slide
+            slides[slideIndex - 1].style.display = 'block';
+            
+            // Change slide every 3 seconds
+            setTimeout(showSlides, 3000);
+        }
+
+        // Start the slideshow
+        showSlides();
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* General reset to remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.slideshow-container img {
+    width: 100%;
+    display: none;
+}
+
+.slideshow-container img.active {
+    display: block;
+}
+
+/* Main section */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.description-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Footer styling */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-left p,
+.footer-right p {
+    margin: 0;
+}
+
+.footer-right a {
+    color: #00c8ff;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
